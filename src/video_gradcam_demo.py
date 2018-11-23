@@ -88,5 +88,6 @@ while True:
         continue
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-
+video_capture.release()
+cv2.destroyAllWindows()
 
